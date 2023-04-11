@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>释梦平台</title>
+    <script src="main.js" defer></script>
+
+</head>
+<body>
+    <h1>欢迎来到释梦平台</h1>
+
+    <form id="dreamForm">
+        <label for="description">梦境描述：</label>
+        <textarea id="description" name="description" rows="4" cols="50" placeholder="请提供足够的细节，以便模型能够生成更准确的解释" required></textarea>
+    
+        <label for="emotion">情感：</label>
+        <select id="emotion" name="emotion">
+            <option value="愉快">愉快</option>
+            <option value="恐惧">恐惧</option>
+            <option value="悲伤">悲伤</option>
+            <!-- 添加更多情感选项 -->
+        </select>
+    
+        <label for="environment">环境：</label>
+        <input type="text" id="environment" name="environment" placeholder="例如：森林、城市、沙漠等">
+    
+        <label for="characters">角色：</label>
+        <input type="text" id="characters" name="characters" placeholder="例如：家人、朋友、动物等">
+    
+        <label for="time">时间：</label>
+        <select id="time" name="time">
+            <option value="白天">白天</option>
+            <option value="夜晚">夜晚</option>
+            <option value="黄昏">黄昏</option>
+            <!-- 添加更多时间选项 -->
+        </select>
+    
+        <button type="submit">提交</button>
+    </form>
+    
+    <div id="result"></div>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+
+
+</form>
+
+<div id="result"></div>
+
+</body>
+</html>
